@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewComponent } from './profile/view/view.component';
@@ -36,7 +38,9 @@ import { SicilyComponent } from './destinations/view/sicily/sicily.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbPaginationModule,
+     NgbAlertModule
   ],
   providers: [],
   bootstrap: [AppComponent]
